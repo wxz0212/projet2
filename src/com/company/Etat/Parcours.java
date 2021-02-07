@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Etat;
 
 public class Parcours {
     //
