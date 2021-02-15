@@ -38,9 +38,9 @@ public class Etat {
     }
     //pour ver droit
     public void verD(){
-        if(Affichage.LARGEURPNL<=Affichage.LARGEURMOTO/2+DISTANCE_MOVE){
+        if(Affichage.LARGEURPNL>=Affichage.LARGEURMOTO/2+DISTANCE_MOVE+positionX){
 
-            this.positionX= this.positionX+DISTANCE_MOVE;
+            this.positionX+=DISTANCE_MOVE;
         }
 
 
@@ -49,7 +49,7 @@ public class Etat {
     public void verG(){
         if(this.positionX>Affichage.LARGEURMOTO/2){
 
-            this.positionX= this.positionX-DISTANCE_MOVE;
+            this.positionX-=DISTANCE_MOVE;
         }
 
 

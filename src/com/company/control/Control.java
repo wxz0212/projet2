@@ -20,18 +20,27 @@ public class Control implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        switch(e.getKeyCode())
-        {
-            case KeyEvent.VK_LEFT:
-                etat.verG();
-                affichage.repaint();
-                break;
-            case KeyEvent.VK_RIGHT:
-                etat.verD();
-                affichage.repaint();
-                break;
+        //left
+        if(e.getKeyCode() == 37) {
+            etat.verG();
+            //etat.calcul_vitesse();
+            affichage.repaint();
+        }
+        //up
+        if(e.getKeyCode() == 38) {
 
         }
+        //right
+        if(e.getKeyCode() == 39) {
+            etat.verD();
+            //etat.calcul_vitesse();
+            affichage.repaint();
+        }
+        //down
+        if(e.getKeyCode() == 40) {
+
+        }
+
     }
 
     @Override
